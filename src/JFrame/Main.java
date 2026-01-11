@@ -52,12 +52,12 @@ public class Main{
         JFrame frame = new JFrame(); // Creates a frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exits out of the application
         frame.setVisible(true); // Makes the frame visible
-        //frame.setSize(width,height); // Sets the frame dimensions
+        frame.setSize(width,height); // Sets the frame dimensions
         frame.setResizable(false); // Makes the frame not resizable
         frame.setTitle(title); // Sets the title
         //frame.setLayout(null);
         frame.add(label);
-        frame.pack();
+        //frame.pack();
 
         // Changes the Frame's Icon and Background
         ImageIcon icon = new ImageIcon("logo.png"); // Creates the Icon's Image

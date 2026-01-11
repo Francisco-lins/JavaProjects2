@@ -5,6 +5,8 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.border.Border;
+import javax.swing.BorderFactory;
 
 public class Practice {
     public static void main(String[] args){
@@ -15,6 +17,10 @@ public class Practice {
         JLabel label = new JLabel();
         ImageIcon image = new ImageIcon("emoji_middle_finger.png");
 
+        Border border = BorderFactory.createLineBorder(Color.BLACK, 10);
+        label.setBorder(border);
+
+        // Text
         label.setText("calaboca");
         label.setVerticalTextPosition(JLabel.TOP);
         label.setHorizontalTextPosition(JLabel.CENTER);
@@ -22,22 +28,21 @@ public class Practice {
         label.setForeground(Color.BLACK);
         label.setIconTextGap(-25);
 
+        // Image
         label.setIcon(image);
         label.setVerticalAlignment(JLabel.CENTER);
         label.setHorizontalAlignment(JLabel.CENTER);
 
-
-
-
-
+        // Frame
         JFrame window = new JFrame();
-
         window.setVisible(true);
         window.setSize(wWidth, wHeight);
         window.setResizable(false);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setLocationRelativeTo(null);
         window.setTitle("calaboca vitor");
         window.add(label);
+        //window.pack();
 
 
         ImageIcon logo = new ImageIcon("cafe.jpg");
@@ -45,7 +50,7 @@ public class Practice {
         window.setIconImage(logo.getImage());
 
 
-        window.getContentPane().setBackground(new Color(127, 46, 239));
+        window.getContentPane().setBackground(Color.WHITE);
 
     }
 }
