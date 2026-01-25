@@ -1,4 +1,8 @@
 package JFrame;
 
-public class Item {
+public interface Item {
+
+    // É chamado quando o item é jogado fora.
+
+
 }

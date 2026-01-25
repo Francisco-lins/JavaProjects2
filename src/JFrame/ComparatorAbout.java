@@ -32,9 +32,11 @@ public class ComparatorAbout
 {
     public static void main(String[] args)
     {
-                                                            // Se for maior, retorna 1.    // Se for igual, retorna 0.   //Se for menor, retorna -1.
-        Comparator<Student> com = (Student i, Student j) -> {return i.getAge() > j.getAge() ? 1 : i.getAge() == j.getAge() ? 0 : -1;
-            };
+
+        Comparator<Student> com = (Student i, Student j) ->
+        {
+            return i.getAge() > j.getAge() ? 1 : i.getAge() == j.getAge() ? 0 : -1;
+        };
 
         List<Student> set = new ArrayList<>();
 
